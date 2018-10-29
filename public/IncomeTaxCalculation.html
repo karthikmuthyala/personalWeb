@@ -1,0 +1,73 @@
+<!Doctype html>
+<html lang='en'>
+		<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="index.css">
+
+
+
+<title>About me</title>
+<title>Form Example</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+</head>
+
+<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<a class="navbar-brand" href="#">Karthik</a>
+		  </div>
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Useful App<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="IncomeTaxCalculation.html">Income tax calc</a></li>
+			  </ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		  </ul>
+		</div>
+	  </nav>
+
+
+      <body background="pic.png">
+<header style="font-size:25px; text-align:center;background-color: rgb(17, 111, 233);color:white;padding:70px">Enter the following details</header>
+<div class="row">
+<div class="col-xs-2"> </div>
+<div class="col-xs-8" style="background-color:skyblue; width:70;height:50;text-align:center;">
+<form id="form1">
+<p>Household Income<sup style="color:red">*</sup></p>
+<input type="text"  name="Income" title="Enter your income" value="4000" required><br>
+<p><b>Deductions</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Deduction" title="Enter your deductions in dollars" placeholder="Ex:2000" pattern="[0-9]+" required><br>
+<p>Location<sup style="color:red">*</sup></p>
+
+<input type="text"  name="Location" title="Enter your location" value="Maryville" required><br>
+<p> Filling Status </p>
+<select id="ddlViewBy">
+	
+<option value="MS-ACS">Single</option>
+<option value="MS-IS">Married</option>
+<option value="None">None</option>
+</select>
+
+<button type="button" name="Submit" onclick="IncomeTax()">Submit</button>
+<p id="demo"></p>
+</form>
+</div>
+<div class="col-xs-2"> </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script  src="java.js"></script>
+</body>
+</html>
+
+

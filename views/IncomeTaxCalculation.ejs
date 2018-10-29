@@ -1,0 +1,33 @@
+<% include footer %>
+      <body background="pic.png">
+<header style="font-size:25px; text-align:center;background-color: rgb(17, 111, 233);color:white;padding:70px">Enter the following details</header>
+<div class="row">
+<div class="col-xs-2"> </div>
+<div class="col-xs-8" style="background-color:skyblue; width:70;height:50;text-align:center;">
+<form id="form1">
+<p>Household Income<sup style="color:red">*</sup></p>
+<input type="text"  name="Income" title="Enter your income" value="4000" required><br>
+<p><b>Deductions</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Deduction" title="Enter your deductions in dollars" placeholder="Ex:2000" pattern="[0-9]+" required><br>
+<p>Location<sup style="color:red">*</sup></p>
+
+<input type="text"  name="Location" title="Enter your location" value="Maryville" required><br>
+<p> Filling Status </p>
+<select id="ddlViewBy">
+	
+<option value="MS-ACS">Single</option>
+<option value="MS-IS">Married</option>
+<option value="None">None</option>
+</select>
+
+<button type="button" name="Submit" onclick="IncomeTax()">Submit</button>
+<p id="demo"></p>
+</form>
+</div>
+<div class="col-xs-2"> </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script  src="java.js"></script>
+<% include footer %>

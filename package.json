@@ -1,0 +1,27 @@
+{
+    "name": "Karthik-app",
+    "version": "0.0.1",
+    "description": "Tax website",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "body-parser": "latest",
+        "cool-ascii-faces": "^1.3.4",
+        "ejs": "latest",
+        "express": "latest",
+        "morgan": "latest",
+        "nconf": "latest",
+        "nodemailer": "latest",
+        "mailgun-js": "latest",
+        "nodemailer-mailgun-transport": "latest"
+    },
+    "author": "Karthik Reddy Muthyala",
+    "homepage": "https://github.com/karthikmuthyala/personalWeb",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/karthikmuthyala/personalWeb"
+    },
+    "license": "Apache-2.0"
+}
